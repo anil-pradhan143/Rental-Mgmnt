@@ -10,7 +10,7 @@ export default function Header() {
 
   const [currentLocation, setCurrentLocation] = useState(null);
   const [categories, setCategories] = useState([]);
-  const [subCategories, setSubCategories] = useState([]);
+ 
 
   const getLocationsMenu = () => {
     toggleLocations(!showLocations);
