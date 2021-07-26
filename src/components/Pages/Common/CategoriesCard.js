@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { ProductList } from "./cardStyle";
-import { useLocation } from "react-router-dom";
-import history from "../../../services/history";
+
 
 export default function CategoriesCard(props) {
-  const location = useLocation();
-  console.log(props.data.categories[0]);
+ 
   return (
     <ProductList>
       {props.data.categories.map((categoriesData, index) => {
