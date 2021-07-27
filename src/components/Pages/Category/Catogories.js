@@ -42,11 +42,15 @@ export default function Catagories() {
       <p
         className="title"
         style={{ fontWeight: 500, paddingLeft: "20px", cursor: "pointer" }}
-        onClick={() => {
-          redirectToCategories(true);
-        }}
       >
-        Equipment Catalog {subCategoriesName}
+        <span
+          onClick={() => {
+            redirectToCategories(true);
+          }}
+        >
+          Equipment Catalog
+        </span>
+        {subCategoriesName}
       </p>
       {showCategories && (
         <CategoriesCard data={cardData} getSubCatogories={getSubCatogories} />
